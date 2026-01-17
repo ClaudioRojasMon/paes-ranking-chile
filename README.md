@@ -370,7 +370,7 @@ pip install -r requirements.txt --force-reinstall
 
 - **DEMRE** (Departamento de Evaluación, Medición y Registro Educacional)
 - **Ministerio de Educación de Chile**
-- Datos disponibles en: [https://demre.cl](https://demre.cl)
+- Datos disponibles en: [Datos Abiertos](https://datosabiertos.mineduc.cl)
 
 ## 🙏 Créditos y Agradecimientos
 
