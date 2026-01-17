@@ -10,11 +10,13 @@ Sistema completo de análisis y ranking de resultados de la **Prueba de Acceso a
 
 - [Características](#-características)
 - [Instalación](#-instalación)
+- [Obtener los Datos](#-obtener-los-datos)
 - [Uso Rápido](#-uso-rápido)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
 - [Ejemplos](#-ejemplos)
 - [Documentación](#-documentación)
 - [Contribuir](#-contribuir)
+- [Créditos](#-créditos-y-agradecimientos)
 - [Licencia](#-licencia)
 
 ## ✨ Características
@@ -39,7 +41,7 @@ Sistema completo de análisis y ranking de resultados de la **Prueba de Acceso a
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/paes-ranking-chile.git
+git clone https://github.com/ClaudioRojasMon/paes-ranking-chile.git
 cd paes-ranking-chile
 
 # Instalar dependencias
@@ -61,6 +63,34 @@ source venv/bin/activate
 # Instalar dependencias
 pip install pandas numpy matplotlib seaborn openpyxl
 ```
+
+## 📊 Obtener los Datos
+
+**IMPORTANTE:** Los archivos CSV con datos PAES NO están incluidos en este repositorio por su tamaño y porque son datos públicos que se actualizan periódicamente.
+
+### Descargar los Datos
+
+1. **Fuente oficial:** [DEMRE - Bases de Datos](https://demre.cl)
+2. Busca la sección de "Bases de datos" o "Archivos de rendición"
+3. Descarga los archivos para los años que necesites:
+   - `ArchivoC_Adm2023.csv`
+   - `ArchivoC_Adm2024.csv`
+   - `ArchivoC_Adm2025.csv`
+4. Colócalos en la carpeta `data/` del proyecto:
+   ```
+   paes-ranking-chile/
+   └── data/
+       ├── ArchivoC_Adm2023.csv  ← Aquí
+       ├── ArchivoC_Adm2024.csv  ← Aquí
+       └── ArchivoC_Adm2025.csv  ← Aquí
+   ```
+
+### Formato Esperado
+
+Los archivos deben:
+- Estar en formato CSV con separador `;` (punto y coma)
+- Incluir las columnas: `RBD`, `SITUACION_EGRESO`, `CLEC_REG_ACTUAL`, `MATE1_REG_ACTUAL`
+- Tener encoding UTF-8 o Latin-1
 
 ## 🎯 Uso Rápido
 
@@ -342,21 +372,31 @@ pip install -r requirements.txt --force-reinstall
 - **Ministerio de Educación de Chile**
 - Datos disponibles en: [https://demre.cl](https://demre.cl)
 
-## 📜 Licencia
+## 🙏 Créditos y Agradecimientos
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+### Autor Principal
+**Claudio Rojas** - Análisis inicial, notebooks exploratorios y conceptualización
+- GitHub: [@ClaudioRojasMon](https://github.com/ClaudioRojasMon)
 
-## 👤 Autor
+### Desarrollo
+Este proyecto fue desarrollado mediante colaboración humano-IA:
+- **Análisis y notebooks originales:** Claudio Rojas
+- **Transformación a proyecto profesional:** Asistencia de Claude (Anthropic)
 
-**Tu Nombre**
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- Email: tu-email@ejemplo.com
+Para más detalles sobre las contribuciones, ver [CREDITS.md](CREDITS.md)
 
-## 🙏 Agradecimientos
+### Fuentes de Datos
+- DEMRE (Departamento de Evaluación, Medición y Registro Educacional)
+- Ministerio de Educación de Chile
 
+### Agradecimientos
 - DEMRE por proporcionar los datos abiertos
 - Comunidad de data science en Python
 - Todos los contribuidores del proyecto
+
+## 📜 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
 ---
 
