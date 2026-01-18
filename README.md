@@ -1,4 +1,4 @@
-https://github.com/ClaudioRojasMon/paes-ranking-chile/blob/main/Original%20Logo-2.png?raw=true
+![Analitica](Logo.png)
 
 # 🎓 Ranking PAES Chile - Análisis de Resultados
 
