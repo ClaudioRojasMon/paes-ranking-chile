@@ -1,3 +1,5 @@
+https://github.com/ClaudioRojasMon/paes-ranking-chile/blob/main/Original%20Logo-2.png?raw=true
+
 # 🎓 Ranking PAES Chile - Análisis de Resultados
 
 Sistema completo de análisis y ranking de resultados de la **Prueba de Acceso a la Educación Superior (PAES)** en Chile. Este proyecto permite procesar, analizar y visualizar los datos de rendimiento de establecimientos educacionales a nivel nacional.
